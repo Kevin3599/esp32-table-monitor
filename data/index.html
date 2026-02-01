@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stock Monitor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>📈 Stock Monitor</h1>
+      <p>ESP32 实时股票监控器</p>
+    </div>
+    <form action="/save" method="POST">
+      <div class="card">
+        <div class="card-title">WiFi 设置</div>
+        <label>网络名称 (SSID)</label>
+        <input type="text" name="ssid" placeholder="输入 WiFi 名称" required>
+        <label>密码</label>
+        <input type="password" name="pass" placeholder="输入 WiFi 密码">
+      </div>
+      <div class="card">
+        <div class="card-title">自选股票 / 加密货币</div>
+        <label>输入代码 (最多5只)</label>
+        <div class="stock-grid">
+          <input type="text" name="stock1" placeholder="AAPL">
+          <input type="text" name="stock2" placeholder="BINANCE:BTCUSDT">
+          <input type="text" name="stock3" placeholder="BINANCE:ETHUSDT">
+          <input type="text" name="stock4" placeholder="TSLA">
+          <input type="text" name="stock5" placeholder="NVDA">
+        </div>
+        <p class="crypto-hint">加密货币格式: BINANCE:BTCUSDT, BINANCE:ETHUSDT, BINANCE:SOLUSDT</p>
+      </div>
+      <button type="submit">保存并连接 →</button>
+    </form>
+    <p class="hint">配置保存后设备将自动重启</p>
+  </div>
+</body>
+</html>
