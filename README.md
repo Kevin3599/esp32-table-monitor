@@ -3,6 +3,7 @@
 一款基于 ESP32 的桌面股票 / 加密货币实时行情监控设备，通过 OLED 屏幕滚动显示多只自选标的的实时价格与涨跌幅，并提供 Web 配置页面，无需修改代码即可灵活配置 WiFi 和自选列表。
 
 ---
+<img width="2386" height="1282" alt="b5c41e2c875e5b54b2347e4ab81741da" src="https://github.com/user-attachments/assets/5acec394-4efe-475e-b914-41b8f6882c0d" />
 
 ## 功能特性
 
@@ -61,40 +62,6 @@
 
 ---
 
-## 快速开始
-
-### 1. 克隆 / 下载项目
-
-```bash
-git clone <仓库地址>
-```
-
-### 2. 用 PlatformIO 打开项目
-
-在 VS Code 中安装 **PlatformIO IDE** 扩展，然后打开本项目文件夹。
-
-### 3. 填写 API Key
-
-编辑 `src/main.cpp`，将第 32 行的 `API_KEY` 替换为你自己的 [Finnhub API Key](https://finnhub.io/register)：
-
-```cpp
-const char* API_KEY = "你的 API Key";
-```
-
-### 4. 上传文件系统
-
-先上传 `data/` 目录中的 Web 页面资源到 SPIFFS：
-
-```
-PlatformIO: Upload Filesystem Image
-```
-
-### 5. 编译并烧录
-
-```
-PlatformIO: Upload
-```
-
 ---
 
 ## 使用说明
@@ -115,24 +82,6 @@ PlatformIO: Upload
 
 ---
 
-## 项目结构
-
-```
-Trade on Table/
-├── src/
-│   └── main.cpp          # 主程序
-├── data/
-│   ├── index.html        # Web 配置页面
-│   ├── style.css         # 页面样式
-│   └── success.html      # 保存成功提示页
-├── include/
-│   └── README
-├── lib/
-│   └── README
-└── platformio.ini        # PlatformIO 工程配置
-```
-
----
 
 ## 注意事项
 
