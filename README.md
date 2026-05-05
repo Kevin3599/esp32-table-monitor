@@ -9,6 +9,7 @@
 # 中文
 
 一款基于 ESP32 的桌面股票 / 加密货币实时行情监控设备，通过 OLED 屏幕滚动显示多只自选标的的实时价格与涨跌幅，并提供 Web 配置页面，无需修改代码即可灵活配置 WiFi 和自选列表。
+<img width="3024" height="1625" alt="6fd71cbccf02ff5bf660fa2b5f747ad0" src="https://github.com/user-attachments/assets/0d33b363-fa3b-42aa-b16c-90a114a88b23" />
 
 ---
 
