@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "E:/Trade on Table"
+		},
+		{
+			"name": "Trade on Table",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"**/*.rpyc": true,
+			"**/*.rpa": true,
+			"**/*.rpymc": true,
+			"**/cache/": true
+		}
+	}
+}
